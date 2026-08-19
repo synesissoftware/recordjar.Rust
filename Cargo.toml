@@ -1,0 +1,75 @@
+
+# ##########################################################
+# Package
+
+[package]
+
+authors = [
+	"Matt Wilson <matthew@synesis.com.au>",
+]
+categories = [
+	"parser-implementations",
+	"text-processing",
+]
+description = "Record-JAR structured text database reader (for Rust)"
+documentation = "https://docs.rs/recordjar"
+edition = "2021"
+homepage = "https://github.com/synesissoftware/recordjar.Rust"
+keywords = [
+	"config",
+	"database",
+	"openrj",
+	"record-jar",
+]
+license = "BSD-3-Clause"
+name = "recordjar"
+readme = "README.md"
+repository = "https://github.com/synesissoftware/recordjar.Rust"
+rust-version = "1.74"
+version = "0.0.1"
+
+
+# ##########################################################
+# Targets
+
+[lib]
+name = "recordjar"
+path = "src/lib.rs"
+
+
+# ##########################################################
+# Features
+
+[features]
+
+default = [
+]
+
+# General features:
+#
+# - "null-feature" - a feature that has no effect (and, thus, is useful for simplifying driver scripts);
+
+null-feature = []
+
+
+# Crate-specific features:
+#
+
+
+# ##########################################################
+# Dependencies
+
+[dependencies]
+
+
+[dev-dependencies]
+
+criterion = { version = "0.8", default-features = false, features = [
+]}
+shwild = { version = "0.1", default-features = false, features = [
+]}
+test_help-rs = { version = "0.1", default-features = false, features = [
+]}
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
