@@ -46,4 +46,40 @@
 //! lines, each holding `name: value` fields. Part of the cross-language
 //! **Open-RJ** family (see [**openrj**][orj] for the C implementation).
 //!
+//! # Components
+//!
+//! ## Types
+//!
+//! * [`Database`] — a parsed Record-JAR database;
+//! * [`Record`] — a record with comment and fields;
+//! * [`Field`] — a single `name: value` pair;
+//! * [`ParseFlags`] — parse-time behaviour flags;
+//! * [`Error`] — operation and parse errors;
+//! * [`ParseErrorDetail`] — line/column parse failure detail;
+//! * [`ParseErrorKind`] — parse error classification;
+//!
+//! ## Functions
+//!
+//! * [`Database::from_str()`] — parse from memory;
+//! * [`Database::from_path()`] — parse from a file path;
+//!
 //! [orj]: https://github.com/synesissoftware/openrj
+
+
+mod error;
+mod flags;
+mod types;
+
+
+pub use error::{
+    Error,
+    ParseErrorDetail,
+    ParseErrorKind,
+    Result,
+};
+pub use flags::ParseFlags;
+pub use types::{
+    Database,
+    Field,
+    Record,
+};

@@ -46,7 +46,17 @@ recordjar = { version = "0.0.1" }
 
 ## Components
 
-T.B.C.
+| Type | Purpose |
+| --- | --- |
+| [`Database`](https://docs.rs/recordjar/latest/recordjar/struct.Database.html) | Parsed Record-JAR database |
+| [`Record`](https://docs.rs/recordjar/latest/recordjar/struct.Record.html) | Record with comment and fields |
+| [`Field`](https://docs.rs/recordjar/latest/recordjar/struct.Field.html) | Single `name: value` field |
+| [`ParseFlags`](https://docs.rs/recordjar/latest/recordjar/struct.ParseFlags.html) | Parse-time behaviour flags |
+| [`Error`](https://docs.rs/recordjar/latest/recordjar/enum.Error.html) | Operation and parse errors |
+| [`ParseErrorKind`](https://docs.rs/recordjar/latest/recordjar/enum.ParseErrorKind.html) | Parse error classification |
+| [`ParseErrorDetail`](https://docs.rs/recordjar/latest/recordjar/struct.ParseErrorDetail.html) | Line/column parse failure detail |
+
+Parser and lookup methods are declared but not yet implemented.
 
 
 ## Examples

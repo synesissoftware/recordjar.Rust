@@ -10,7 +10,7 @@
 
 ## Functional improvements
 
-* [ ] public types (`Database`, `Record`, `Field`, flags, errors);
+* [x] ~~~public types (`Database`, `Record`, `Field`, flags, errors)~~~;
 * [ ] memory parser (records, fields, continuations, comments);
 * [ ] parse flags and field aliases;
 * [ ] field lookup API;
