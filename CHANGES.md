@@ -5,6 +5,7 @@
 
 * initial project boilerplate (**Cargo.toml**, **src/lib.rs**, CI, tooling, documentation);
 * added public types and error stubs (**Database**, **Record**, **Field**, **ParseFlags**, **Error**);
+* implemented memory parser (**parse.rs**): records, fields, continuations, comments, parse errors;
 
 
 <!-- ########################### end of file ########################### -->

@@ -58,6 +58,12 @@ recordjar = { version = "0.0.1" }
 
 Parser and lookup methods are declared but not yet implemented.
 
+| Function | Purpose |
+| --- | --- |
+| `Database::from_str()` | Parse from memory |
+| `Database::from_path()` | Parse from file path (not yet implemented) |
+| `Record::find_field_by_name()` | Field lookup (Step 4) |
+
 
 ## Examples
 
