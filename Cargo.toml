@@ -14,6 +14,15 @@ categories = [
 description = "Record-JAR structured text database reader (for Rust)"
 documentation = "https://docs.rs/recordjar"
 edition = "2021"
+exclude = [
+	".cargo",
+	".cursor",
+	".github",
+	".vimrc",
+	".vscode",
+	"scripts",
+	"target",
+]
 homepage = "https://github.com/synesissoftware/recordjar.Rust"
 keywords = [
 	"config",
@@ -47,8 +56,10 @@ default = [
 
 # General features:
 #
+# - "_NEVER_TO_BE_ENABLED" - this is a placeholder feature and must NEVER be specified;
 # - "null-feature" - a feature that has no effect (and, thus, is useful for simplifying driver scripts);
 
+_NEVER_TO_BE_ENABLED = []
 null-feature = []
 
 
@@ -59,16 +70,17 @@ null-feature = []
 # ##########################################################
 # Dependencies
 
-[dependencies]
+[build-dependencies]
 
+[dependencies]
 
 [dev-dependencies]
 
 criterion = { version = "0.8", default-features = false, features = [
 ]}
-shwild = { version = "0.1", default-features = false, features = [
+shwild = { version = "0.2", default-features = false, features = [
 ]}
-test_help-rs = { version = "0.1", default-features = false, features = [
+test_help-rs = { version = "0.2", default-features = false, features = [
 ]}
 
 
