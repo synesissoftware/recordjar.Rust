@@ -4,7 +4,7 @@
  * Purpose: Primary implementation file for recordjar.Rust.
  *
  * Created: 20th August 2026
- * Updated: 20th August 2026
+ * Updated: 11th September 2026
  *
  * Home:    https://github.com/synesissoftware/recordjar.Rust
  *
@@ -68,6 +68,7 @@
 
 mod error;
 mod flags;
+mod parse;
 mod types;
 
 

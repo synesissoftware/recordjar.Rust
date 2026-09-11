@@ -31,9 +31,8 @@ Record-Jar structured text database reader for Rust — part of the cross-langua
 
 **recordjar** reads Record-JAR databases: text files (or in-memory buffers) of
 records separated by `%%` lines, each record holding `name: value` fields.
-Continuation lines, comments, field aliases, and ordered/case-insensitive
-lookup are supported by the reference **openrj** C library; **recordjar.Rust**
-will provide equivalent facilities in idiomatic Rust.
+Continuation lines, comments, and parse-time flags are supported by the
+memory parser; file I/O, field aliases, and field lookup remain planned.
 
 
 ## Installation
@@ -57,18 +56,19 @@ recordjar = { version = "0.0.1" }
 | [`ParseErrorKind`](https://docs.rs/recordjar/latest/recordjar/enum.ParseErrorKind.html) | Parse error classification |
 | [`ParseErrorDetail`](https://docs.rs/recordjar/latest/recordjar/struct.ParseErrorDetail.html) | Line/column parse failure detail |
 
-Parser and lookup methods are declared but not yet implemented.
+Memory parsing is implemented for records, fields, comments, continuations,
+and parse errors. File I/O and field lookup remain under development.
 
 | Function | Purpose |
 | --- | --- |
 | `Database::from_str()` | Parse from memory |
 | `Database::from_path()` | Parse from file path (not yet implemented) |
-| `Record::find_field_by_name()` | Field lookup (Step 4) |
+| `Record::find_field_by_name()` | Field lookup (not yet implemented) |
 
 
 ## Examples
 
-T.B.C. (see [**EXAMPLES.md**](./EXAMPLES.md)).
+See [**EXAMPLES.md**](./EXAMPLES.md) for the available examples.
 
 
 ## Project Information

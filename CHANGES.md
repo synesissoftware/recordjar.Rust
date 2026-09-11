@@ -1,11 +1,11 @@
 # recordjar.Rust - Changes <!-- omit in toc -->
 
 
-## 0.0.1 - 20th August 2026
+## 0.0.1 - 11th September 2026
 
-* initial project boilerplate (**Cargo.toml**, **src/lib.rs**, CI, tooling, documentation);
-* added public types and error stubs (**Database**, **Record**, **Field**, **ParseFlags**, **Error**);
-* implemented memory parser (**parse.rs**): records, fields, continuations, comments, parse errors;
+* Established the initial project boilerplate (**Cargo.toml**, **src/lib.rs**, CI, tooling, and documentation);
+* Added public types and error definitions (**Database**, **Record**, **Field**, **ParseFlags**, **Error**);
+* Implemented the memory parser (**src/parse.rs**) for records, fields, continuations, comments, and parse errors;
 
 
 <!-- ########################### end of file ########################### -->
