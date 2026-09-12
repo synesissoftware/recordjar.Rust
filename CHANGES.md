@@ -1,7 +1,7 @@
 # recordjar.Rust - Changes <!-- omit in toc -->
 
 
-## 0.0.1 - 11th September 2026
+## 0.0.1 - 12th September 2026
 
 * Established the initial project boilerplate (**Cargo.toml**, **src/lib.rs**, CI, tooling, and documentation);
 * Added public types and error definitions (**Database**, **Record**, **Field**, **ParseFlags**, **Error**);
