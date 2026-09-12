@@ -1,0 +1,91 @@
+
+# ##########################################################
+# Package
+
+[package]
+
+authors = [
+	"Matt Wilson <matthew@synesis.com.au>",
+]
+categories = [
+	"parser-implementations",
+	"text-processing",
+]
+description = "Record-JAR structured text database reader (for Rust)"
+documentation = "https://docs.rs/recordjar"
+edition = "2021"
+exclude = [
+	".cargo",
+	".cursor",
+	".github",
+	".vimrc",
+	".vscode",
+	"scripts",
+	"target",
+]
+homepage = "https://github.com/synesissoftware/recordjar.Rust"
+keywords = [
+	"config",
+	"database",
+	"openrj",
+	"record-jar",
+]
+license = "BSD-3-Clause"
+name = "recordjar"
+readme = "README.md"
+repository = "https://github.com/synesissoftware/recordjar.Rust"
+rust-version = "1.74"
+version = "0.0.1"
+
+
+# ##########################################################
+# Targets
+
+[lib]
+name = "recordjar"
+path = "src/lib.rs"
+
+[[example]]
+name = "versions"
+path = "examples/versions/main.rs"
+
+
+# ##########################################################
+# Features
+
+[features]
+
+default = [
+]
+
+# General features:
+#
+# - "_NEVER_TO_BE_ENABLED" - this is a placeholder feature and must NEVER be specified;
+# - "null-feature" - a feature that has no effect (and, thus, is useful for simplifying driver scripts);
+
+_NEVER_TO_BE_ENABLED = []
+null-feature = []
+
+
+# Crate-specific features:
+#
+
+
+# ##########################################################
+# Dependencies
+
+[build-dependencies]
+
+[dependencies]
+
+[dev-dependencies]
+
+criterion = { version = "0.8", default-features = false, features = [
+]}
+shwild = { version = "0.2", default-features = false, features = [
+]}
+test_help-rs = { version = "0.2", default-features = false, features = [
+]}
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
