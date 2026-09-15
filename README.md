@@ -31,8 +31,9 @@ Record-Jar structured text database reader for Rust — part of the cross-langua
 
 **recordjar** reads Record-JAR databases: text files (or in-memory buffers) of
 records separated by `%%` lines, each record holding `name: value` fields.
-Continuation lines, comments, and parse-time flags are supported by the
-memory parser; file I/O, field aliases, and field lookup remain planned.
+Continuation lines, comments, and the implemented parse-time flags are
+supported by the memory parser; file I/O, field aliases, and field lookup
+remain planned.
 
 
 ## Installation
@@ -40,7 +41,7 @@ memory parser; file I/O, field aliases, and field lookup remain planned.
 Reference in **Cargo.toml** in the usual way:
 
 ```toml
-recordjar = { version = "0.0.1" }
+recordjar = { version = "0.0.2" }
 ```
 
 
@@ -57,7 +58,8 @@ recordjar = { version = "0.0.1" }
 | [`ParseErrorDetail`](https://docs.rs/recordjar/latest/recordjar/struct.ParseErrorDetail.html) | Line/column parse failure detail |
 
 Memory parsing is implemented for records, fields, comments, continuations,
-and parse errors. File I/O and field lookup remain under development.
+parse errors, blank-record elision, field ordering, and single-record mode.
+File I/O, field aliases, and field lookup remain under development.
 
 | Function | Purpose |
 | --- | --- |

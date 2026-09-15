@@ -12,12 +12,13 @@
 
 * [x] ~~~public types (`Database`, `Record`, `Field`, flags, errors)~~~ - ✅;
 * [x] ~~~memory parser (records, fields, continuations, comments)~~~ - ✅;
-* [ ] parse flags and field aliases;
+* [x] ~~~implemented parser flags (blank-record elision, field ordering, and single-record mode)~~~ - ✅;
+* [ ] case-insensitive lookup and field aliases;
 * [ ] field lookup API;
 * [ ] file I/O;
 * [ ] unit tests (port **openrj** corpus);
-* [ ] rename test functions to Synesis canonical **RUST_TEST_NAMING** (`TEST_` + `SHOUTING_SNAKE_CASE`; construct names such as `ParseFlags` and `Database` preserve PascalCase; see **rust-standards** and `scripts/check_test_names.py`) — current parser tests use mixed case (e.g. `TEST_create_from_memory_counts` → `TEST_CREATE_FROM_MEMORY_COUNTS`);
-* [ ] examples;
+* [x] ~~~canonical Rust test names~~~ - ✅;
+* [x] ~~~examples (version reporting)~~~ - ✅;
 
 
 ## Performance improvements
@@ -27,7 +28,7 @@
 
 ## Packaging improvements
 
-* [ ] crates.io publish metadata review;
+* [x] ~~~crates.io publish metadata review and dry run~~~ - ✅;
 
 
 <!-- ########################### end of file ########################### -->

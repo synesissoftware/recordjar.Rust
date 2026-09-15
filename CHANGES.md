@@ -1,6 +1,11 @@
 # recordjar.Rust - Changes <!-- omit in toc -->
 
 
+## 0.0.2 - 15th September 2026
+
+* Tidied post-release documentation and project tracking metadata;
+
+
 ## 0.0.1 - 12th September 2026
 
 * Established the initial project boilerplate (**Cargo.toml**, **src/lib.rs**, CI, tooling, and documentation);
